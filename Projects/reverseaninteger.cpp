@@ -10,11 +10,8 @@ while(temp!=0){
 r=temp%10;
 sum=sum*10+r;
 temp=temp/10;
-
-
-
 }
 
-
+cout<<sum<<endl;
     return 0;
 }
