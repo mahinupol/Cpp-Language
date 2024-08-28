@@ -1,13 +1,17 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int i,n,mul;
-    cout<<"Enter a number: ";
-    cin >> n;
-    for ( i = n; i >= 1; i--)
-    {
-       cout<<i<<endl; 
-    mul
+
+int factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
     }
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    cout << "Factorial of " << n << " is " << factorial(n) << endl;
     return 0;
 }
